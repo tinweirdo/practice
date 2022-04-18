@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#outer {
+    margin: 50px auto;
+    padding: 10px;
+    background-color: bisque;
+    /* 文本未居中? 在图片和按钮之间加一个换行标签*/
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 要等页面加载完再运行js代码，需要为window对象绑定事件onload
+        该事件对应的响应函数将会在页面加载完毕后执行
+        这样可以确保代码执行时所有的DOM对象已经加载完毕 -->
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById("btn");
+            btn.onclick = function () {
+                alert("hello");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <button id="btn">按钮</button>
+    <!-- 将js代码编写到页面的下部就是为了，可以在页面加载完毕后再执行js代码 -->
+    <!-- <script type="text/javascript" src="load-document.js">
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            alert("hello");
+        }
+    </script> -->
+</body>
+
+</html>

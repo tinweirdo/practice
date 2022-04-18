@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 11.5pt;
+}
+
+body {
+  width: 210mm;
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 0.5pt;
+  margin-bottom: 0.5pt;
+}
+
+ul {
+  line-height: 1.5;
+  margin-top: 0.5pt;
+  margin-bottom: 0.5pt;
+}
+
+li {
+  line-height: 1.5;
+  margin-top: 0.5pt;
+  margin-bottom: 0.5pt;
+}
+
+h1 {
+  font-size: 32pt;
+}
+
+h2 {
+  font-size: 22pt;
+}
+
+h3 {
+  font-size: 16pt;
+}
+
+body > .page {
+  width: 100%;
+  height: 297mm;
+  padding: 8pt;
+  box-sizing: border-box;
+  overflow: hidden;
+  page-break-after: always;
+}
+
+.sub-text {
+  opacity: 0.6;
+}
+
+header {
+  width: 100%;
+  margin-top: 0pt;
+  margin-bottom: 40pt;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+header .info .name {
+  margin-bottom: 8pt;
+}
+
+header .avatar img {
+  width: 112px;
+  object-fit: cover;
+}
+
+.part {
+  position: relative;
+  border-top: 3pt solid #000;
+  margin-top: 12pt;
+  margin-bottom: 12pt;
+  padding: 9pt 0 12pt 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.part__slug {
+  position: absolute;
+  top: -3pt;
+  padding-right: 3pt;
+  background-color: #fff;
+  font-size: 3pt;
+  font-weight: 900;
+  line-height: 3pt;
+}
+
+.part > div:nth-of-type(1) {
+  width: 30%;
+  flex-shrink: 0;
+}
+
+.part > div:nth-of-type(2) {
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.part__title {
+  font-size: 22pt;
+  font-weight: bold;
+  margin-bottom: 8pt;
+  opacity: 0.4;
+}
+
+.item {
+  margin-top: 16pt;
+  margin-bottom: 10pt;
+}
+
+.item:first-child {
+  margin-top: 4pt;
+}
+
+.item__title {
+  margin-bottom: 8pt;
+  position: relative;
+}
+
+.item__title__tip {
+  position: absolute;
+  top: -0.7em;
+  transform: translateX(-1.8em) scale(0.9);
+  color: #fff;
+  font-size: 0.4em;
+  background-color: #000;
+  display: inline-block;
+  border: 2pt solid #fff;
+  padding: 0 6px;
+  border-radius: 9999px;
+  font-weight: 400;
+  line-height: calc(2em + 2px);
+}
+
+.item__content {
+  opacity: 0.65;
+  line-height: 0.5;
+}
+
+.item__desc {
+  font-size: 8pt;
+  margin: 4pt 0;
+  opacity: 0.8;
+}
+
+.item__desc > span {
+  padding: 0 0.5em 0 0;
+}
+
+.item__desc > span::before {
+  content: '/';
+  margin-right: 0.5em;
+}
+
+.item__desc > span:first-child {
+  padding-left: 0;
+}
+
+.item__desc > span:first-child::before {
+  content: '';
+  margin-right: 0;
+}
+
+img {
+  max-width: 100%;
+}
